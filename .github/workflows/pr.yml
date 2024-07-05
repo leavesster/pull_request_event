@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo "${{ github.event.pull_request }}"
+        run: echo "$GITHUB_CONTEXT"
